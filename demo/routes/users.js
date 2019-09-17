@@ -9,7 +9,8 @@ var dbQuery	= require('./../inc/db_queries');
 userRouter.post('/', function(req, res){
     var userName = req.body.user_name;
     var userPassword = req.body.user_password;
-    if (userName == null || userName == '' || userPassword == null || userPassword == '') {
+    var userEmail = req.body.user_email;
+    if (userName == null || userName == '' || userPassword == null || userPassword == '' || userEmail == null || userEmail == '') {
         res.json(
             {
                 'success' : false,
