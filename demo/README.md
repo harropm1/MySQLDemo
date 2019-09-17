@@ -1,0 +1,1 @@
+This is the repo for learning how to make basic SQL connections and learning how to use different queries.
